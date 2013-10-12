@@ -1,0 +1,22 @@
+
+В CSS-a: тръгваме от най общия случай, и след това дефинираме все по специфичните случаи.
+При <space> между елементите - селектори в css файла, селекторите се четат наобратно:
+#header nav a{ color: #fff} означава: 
+всички а елементи, които са в nav селектори, които са в #header елемент с ID;
+
+nav - html5 element
+
+nav > ul - всички списъци, които са преки деца на nav
+nav >ul ul { display: none; }
+nav > ul li:hover > ul { display: block; }
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+sublime:
+ctrl +k+b - show/hide side bar
+ctrl+shift+2 - splits screen to two parts
+
+
+homework:
+l3/t3 -> 
