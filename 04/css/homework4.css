@@ -10,10 +10,10 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6{
-	margin-bottom: 10px;
-	margin-top: 20px;
+	margin-bottom: 10px;	margin-top: 20px;
 	font-family: 'Libre Baskerville', serif;
 }
+
 h1 { font-size: 2.5em; margin: .67em 0 }
 h2 { font-size: 1.5em; margin: .75em 0 }
 h3 { font-size: 1.17em; margin: .83em 0 }
