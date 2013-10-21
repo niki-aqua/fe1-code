@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>table with applyed styles</title>
+	<link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+
+	<h3>general rules</h3>
+	<ul>
+		<li>tfoot stays @top, right after thead</li>
+		<li>table should not contain any tr if having thead element. All elements should be in the thead, tbody and tfoot section.</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<h3>Links:</h3>
+
+	<ul>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+
+	<h3>usecase: Multiple rowspan, colspan ( for whatever reason)</h3>
+	<p>When we mainly need two headers: one at top and the other on the left.</p>
+
+	<table>
+	  <tr>
+	    <td>This</td>
+	    <td>Little</td>
+	    <td>Piggy</td>
+	    <td>Went</td>
+	    <td>To</td>
+	    <td>Market</td>
+	  </tr>
+	  <tr>
+	    <td colspan="2">This</td>
+	    <td>Little</td>
+	    <td>Piggy</td>
+	    <td>Went</td>
+	    <td>To</td>
+	  </tr>
+	    <tr>
+	    <td colspan="4">This</td>
+	    <td rowspan="3">Little</td>
+	    <td>Piggy</td>
+	  </tr>
+	  <tr>
+	    <td rowspan="2">This</td>
+	    <td>Little</td>
+	    <td>Piggy</td>
+	    <td>Went</td>
+	    <td>To</td>
+	  </tr>
+	  <tr>
+	    <td>Little</td>
+	    <td>Piggy</td>
+	    <td>Went</td>
+	    <td>To</td>
+	  </tr>
+	</table>
+
+	<h3>usecase: Multiplication table</h3>
+	<p>When we mainly need two headers: one at top and the other on the left.</p>
+	<table class="multiplication">
+		<thead>
+			<tr>
+				<th>1</th>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>5</th>
+				<th>6</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th>2</th>
+				<td>4</td>
+				<td>6</td>
+				<td>8</td>
+				<td>10</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td>6</td>
+				<td>9</td>
+				<td>12</td>
+				<td>15</td>
+				<td>18</td>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td>8</td>
+				<td>12</td>
+				<td>16</td>
+				<td>20</td>
+				<td>24</td>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td>10</td>
+				<td>15</td>
+				<td>20</td>
+				<td>25</td>
+				<td>30</td>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td>12</td>
+				<td>18</td>
+				<td>24</td>
+				<td>30</td>
+				<td>36</td>
+			</tr>
+			<tr>
+				<th>7</th>
+				<td>14</td>
+				<td>21</td>
+				<td>28</td>
+				<td>35</td>
+				<td>42</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>usecase Chess Board Like table (for whatever reason)</h3>
+	<table class="chess">
+		<thead>
+			<tr>
+				<th></th>
+				<th>А</th>
+				<th>B</th>
+				<th>C</th>
+				<th>D</th>
+				<th>E</th>
+				<th>F</th>
+				<th>G</th>
+				<th>H</th>
+				<th></th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr>
+				<td></td>
+				<td>A</td>
+				<td>B</td>
+				<td>C</td>
+				<td>D</td>
+				<td>E</td>
+				<td>F</td>
+				<td>G</td>
+				<td>H</td>
+				<th></th>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<th>1</th>
+				<td>A1</td>
+				<td>B1</td>
+				<td>C1</td>
+				<td>D1</td>
+				<td>E1</td>
+				<td>F1</td>
+				<td>G1</td>
+				<td>H1</td>
+				<th>1</th>
+			</tr>
+			<tr>
+				<th>2</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<th>2</th>
+			</tr>
+			<tr>
+				<th>3</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<th>3</th>
+			</tr>
+			<tr>
+				<th>4</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<th>4</th>
+			</tr>
+			<tr>
+				<th>5</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<th>5</th>
+			</tr>
+			<tr>
+				<th>6</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<th>6</th>
+			</tr>
+			<tr>
+				<th>7</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<th>7</th>
+			</tr>
+			<tr>
+				<th>8</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<th>8</th>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>usecase: general hover, odd/even coloring</h3>
+	<table class="hs">
+		<colgroup>
+			<col>
+			<col class="marked">
+			<col>
+			<col>
+			<col>
+		</colgroup>
+		<thead>
+			<tr>
+				<th>header cell</th>
+				<th>header cell</th>
+				<th>header cell</th>
+				<th>header cell</th>
+				<th>header cell</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+			<tr>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+				<td>cell</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,135 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	padding: 80px;
+}
+/* Meyer Reset */
+
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* End Meyer Reset */
+/*	Normalize */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*	End Normalize */
+
+
+table {
+	margin-top: 10px;
+	border-spacing: 0.5rem;
+	border-collapse: collapse;
+}
+
+td {
+  padding: 0.5rem;
+  border: 1px solid grey;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin-top: 1.5em;
+}
+
+/*td:nth-child(1) { background: hsl(150, 50%, 50%); }
+td:nth-child(2) { background: hsl(160, 60%, 50%); }
+td:nth-child(3) { background: hsl(170, 70%, 50%); }
+td:nth-child(4) { background: hsl(180, 80%, 50%); }
+td:nth-child(5) { background: hsl(190, 90%, 50%); }
+td:nth-child(6) { background: hsl(200, 99%, 50%); }*/
+
+th{
+	min-width: 25px;
+	background-color: orange;
+	padding: 5px 10px;
+	border: 1px solid grey;
+}
+
+/* multiplication */
+
+table.multiplication td{
+	vertical-align: middle;
+	text-align: center;
+	border: 1px dashed green;
+}
+
+table.multiplication{
+
+}
+
+/* Chessboard */
+
+table.chess th, table.chess td{
+	height: 25px;
+	width: 25px;
+}
+
+table.chess td{
+	border: 1px solid black;
+	vertical-align: middle;
+	text-align: center;
+}
+
+table.chess tbody tr:nth-child(odd) td:nth-child(odd), table.chess tbody tr:nth-child(even) td:nth-child(even) {
+	background-color: black;
+	color: white;
+	font-size: 18px;
+	font-style: italic;
+}
+
+table.chess tbody tr:nth-child(odd) td:nth-child(even), table.chess tbody tr:nth-child(even) td:nth-child(odd) {
+	background-color: white;
+	color: black;
+}
+
+table.chess th, table.chess tfoot td{
+	color: white;
+	background-color: grey;
+	border: 1px solid black;
+}
+
+
+/* End Chessboard */
+
+/* Selecting some stuff using hover */
+
+table.hs tr:nth-child(odd) td{
+	background-color: grey;
+}
+
+/* case: */
+table.hs tr:hover td,
+table.hs tr:nth-child(odd) td:nth-child(2):hover{
+	background-color: lightgreen;
+}
+
+
+table.hs tr:nth-child(odd) td:nth-child(2),
+table.hs .marked{
+	background-color: lightblue;
+	color: green;
+}
+
+/* 
+	get a li element if it is the only li element in the ul
+	Usecase: if the only article, display template. Else: list template.
+*/
+ul li:first-child:last-child{
+	
+}
