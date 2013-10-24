@@ -1,0 +1,44 @@
+*{	padding: 0; margin: 0; }
+
+body{	padding: 20px; background: #FFF; }
+#container{	width: 900px;	margin: 0 auto;	padding: 20px;}
+
+header{	background: #aaa; height: 60px;}
+header h1{ clear: both;}
+section{ background: #DEF;	overflow: hidden;}
+footer{	background: #c07;}
+
+.content70{	width: 70%;	background: #C00;	}
+.content65{	width: 65%; background: #039; 	}
+.sidebar30{	width: 30%;	background: #F0f;	/*clear: left;*/ }
+.sidebar20{	width: 20%; background: #c0c;	}
+.sidebar15{	width: 15%; background: #a60;	}
+
+.flt-right{	float: right;	padding: 30px 0;}
+.flt-left{	float: left;	padding: 30px 0;}
+
+/* Usecase: simple menu */
+.nav{ position: relative; float: right;}
+.nav ul{ display: block;}
+.nav ul li{width: 120px; float: left; list-style-type: none; background: #F00; margin-right: 3px;}
+.nav ul li:last-child{ margin-right: 0;}
+.nav ul li a{ padding: 3px 10px; text-decoration: none; display: block; text-align: center; border: 1px solid white;}
+.nav ul li a:hover{ border: 1px solid black; background: #0F0;}
+
+/* Usecase: two-dimentional menu */
+.nav2{ padding: 0; margin: 0; border: 0; float: right;}
+.nav2 ul{ display: block;}
+.nav2 ul li{ float: left; list-style-type: none; position: relative; background: #F00; margin-right: 3px;}
+.nav2 ul > li{ width: 120px; height: 28px; }
+.nav2 ul li:last-child{ margin-right: 0;}
+/* 
+	we escape the box model problem, by making the a elements display: block; 
+	and leaving them expand 100% to the li's width
+*/
+.nav2 ul li a{ padding: 3px 10px; text-decoration: none; display: block; text-align: center; border: 1px solid white;}
+.nav2 ul li a:hover{ border: 1px solid black; background: #0F0;}
+.nav2 ul li ul { display: none; }
+/* We write top: 20 px to preserve the li content, and to start the sub UL below it; */
+.nav2 ul li:hover > ul { display: block; position: absolute;  top: 28px;  left: 0; }
+/* We write 100% to get the content aside the old list; and sublist; and sublist... */
+.nav2 ul li ul li:hover > ul { display: block; position: absolute;  top: 0; left: 100%; }
