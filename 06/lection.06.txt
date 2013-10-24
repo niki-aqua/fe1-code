@@ -6,3 +6,13 @@
 
 <ctrl>+<ALT>+<Enter> - wrap element with tag
 
+това се ползва при форми, за да се стилизират различните input елементи;
+- text
+- password
+- textarea
+ 
+
+a[title]{
+	color:blue;
+}
+

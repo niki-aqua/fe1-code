@@ -1,0 +1,21 @@
+Box model
+
+Inline elements:
+... in the slides
+
+
+Block elements:
+=================
+if no width is set, will expand naturally to fill its parent container
+can have margins and /or paddings
+if no height is set, ...
+
+
+Inline vs Block elements
+=========================
+
+
+all about floats;
+
+
+
