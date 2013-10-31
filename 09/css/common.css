@@ -1,0 +1,68 @@
+/* css/common.css */
+
+*{ margin: 0; padding: 0;}
+body{	padding: 20px; font: 16px Verdana, sans-serif; }
+h1{ text-align: center; margin: 20px 0;}
+
+/* Form COntainer Stuff */
+#form-container{
+	border-radius: 5px;
+	margin-top: 10px;
+	margin: 0 auto;
+	border: 1px solid #cec;
+	width: 60%;
+	background: #eee;
+	padding: 1.5em;
+}
+
+form fieldset{ padding: 1.5em; margin: 2.5em 0 1.5em 0; border: 1px solid #ccc; position: relative;}
+form fieldset p{ overflow: hidden; margin-bottom: 1.5em;}
+form fieldset p:last-child{ margin-bottom: 0;}
+
+form label{ display: block; float: left; width: 27.5%; margin-right: 2.5%; text-align: right;}
+form legend{ 
+	position: absolute; 
+	top: -1.25em; 
+	right: 0.8em; 
+	border-top: 1px dotted green; 
+	border-left: 1px dotted green;
+	border-bottom: 1px solid grey;
+	border-right: 1px solid grey;
+	color: green;
+	background-color: #ccc;
+	padding: 5px 10px; }
+
+form input[text],
+form select, 
+form textarea{
+	display: block;
+	float: left;
+	width: 60%; 
+	outline: none; 
+	padding: 5px 8px; 
+	box-sizing: border-box outside;
+	border: 1px solid #ccc;
+}
+
+form input[text]:focus, 
+form select:focus,
+form textarea:focus{ border: 1px solid #f00;}
+form textarea{ min-height: 30px;}
+form #submit-me{ float: right; border: 1px solid grey; padding: 5px 10px; }
+form #submit-me:hover{ background-color: #ccc; color: green; border: 1px solid green; cursor: pointer;}
+
+form .list-checkbox{ }
+form .list-checkbox li{ 
+	display: block; 
+	width: 50%;
+	float: right; 
+	list-style-type: none outside; 
+	overflow: hidden; 
+	padding-bottom: 0.5em;
+	/*border: 1px dashed #cde;*/
+}
+form .list-checkbox li input{ float: right; width: 20%; margin-top: 0.32em; }
+form .list-checkbox li label{ float: right; width: 80%; margin-left: 10px;text-align: left;   /*border: 1px solid red;*/}
+
+/* Form COntainer Stuff End */
+
