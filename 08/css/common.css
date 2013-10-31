@@ -1,1 +1,36 @@
 /* css/common.css */
+*{ padding: 0; margin: 0;}
+
+body{ font: 16px/1.5 Verdana, Arial, sans-serif; }
+
+#container{width: 900px; margin: 0 auto;}
+
+#header, 
+#footer, 
+#main{	border: 1px solid #000;	}
+
+#main{ overflow: hidden;}
+
+#header{	height: 200px; margin-bottom: 20px; border-top: 0;}
+#footer{	height: 200px; margin-top: 20px; border-bottom: 0;}
+
+.content,.sidebar{ float: left;}
+.cleaner{ clear: both;}
+
+.content{ width: 70%;}
+.sidebar{width: 30%;}
+
+/*	Elements: ;*/
+.inner{ padding: 20px;}
+
+/*	Header: ;*/
+#header h1{width: 30%;float: left; }
+#header nav{width: 70%; float: left;}
+
+
+/*	Content */
+.gallery ul{ overflow: hidden; width: 900px; margin: 20px 0;}
+.gallery ul li{ list-style-type: none; float: left;  width: 200px; height: 150px; overflow: hidden; border: 1px dashed grey; margin: 0 10px 10px 0;}
+.gallery ul img{ width: 200px; }
+
+.copileft{ text-align: center; display: block; width: 100%; }
