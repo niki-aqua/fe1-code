@@ -1,0 +1,15 @@
+﻿* { padding:0; margin:0px; }
+
+body{ font:16px/1.5 Verdana, Arial, sans-serif; }
+
+.cleaner{ clear:both; }
+/*---layout---*/
+
+#container { width:900px; margin:0 auto; }
+
+
+#header{ margin-bottom:20px; }
+
+nav ul li ul li{ font:14px/1 Verdana, Arial, sans-serif;  }
+
+

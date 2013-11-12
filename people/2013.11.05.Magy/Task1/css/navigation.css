@@ -1,0 +1,82 @@
+﻿/*---navigation---*/
+
+nav li{ list-style: none outside; display:block; position:relative;  }
+nav li a{ display:block; color: #003333; text-decoration:none; }
+
+
+nav {}
+	
+nav> ul>li:first-child 
+{  
+	background-image: linear-gradient(#F0F0F0, #DDDBDD);
+    border-bottom: 1px solid #B4B0B3;   
+    border-top: 1px solid #FFFFFF;
+ 	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+ nav>ul> li:last-child 
+ {   
+	background-image: linear-gradient(#F0F0F0, #DDDBDD);
+    border-bottom: 1px solid #B4B0B3;   
+    border-top: 1px solid #FFFFFF;
+ 	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;   
+}
+
+nav> ul>li.separator{
+	background: url('../images/menu_separator.png');
+	width: 1px;
+}
+
+nav>ul>li { float:left; }
+nav ul li
+{ 
+	background-image: linear-gradient(#F0F0F0, #DDDBDD); 
+	border-bottom: 1px solid #B4B0B3;  
+	border-top: 1px solid #FFFFFF; 
+}
+nav ul li a{ padding: 10px 20px; display: block;}
+nav  a:visited {color: #00cccc; } /*neraboti??*/
+
+nav> ul>li:first-child a,
+nav> ul>li:first-child a:hover{	padding-left:40px;}
+
+nav> ul>li:first-child a:hover
+{ 
+	/*background:url('menu_hover.png') repeat-x;*/
+	border-top-left-radius: 8px; 
+	border-bottom-left-radius: 8px; 
+}
+nav> ul>li:last-child a,
+nav> ul>li:last-child a:hover{	padding-right:40px;     }
+nav> ul>li:last-child a:hover
+{ 
+	background: url('../images/menu_hover.png') repeat-x;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+nav ul li:hover >a, 
+nav ul li a:hover{ display: block; background:url('../images/menu_hover.png') repeat-x; color:#fff;}
+
+/* Rules for ovale boxed menus: */
+nav> ul>li ul>li:last-child > a,
+nav> ul>li ul>li:last-child,
+nav> ul>li ul
+{ 
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+nav> ul>li ul>li:first-child > a,
+nav> ul>li ul>li:first-child,
+nav> ul>li ul
+{ 
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+
+nav ul li ul{ display:none; width:195px; position:absolute; left:0; top:100%; }
+
+nav ul li:hover>ul { display:block; }
+nav ul li ul li ul { top:0; left:100%; }
