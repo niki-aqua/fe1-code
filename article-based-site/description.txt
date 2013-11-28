@@ -1,0 +1,52 @@
+article-based-site
+
+Tasks:
+
+<li>Templates - home.html</li>
+
+    Short description of the site's topic
+    A few of the latest articles/posts
+
+<li>Templates - archive.html</li>
+
+    list of articles
+        by date
+        by author
+        by category
+
+    Sidebar
+
+<li>Templates - single.html</li>
+
+    Single article
+    Comments list
+    Comment form
+    Sidebar
+
+<li>Templates - page.html</li>
+
+    Page content / Single article
+    Sidebar
+
+<li>Templates - gallery.html</li>
+
+    Picture gallery
+    Sidebar
+
+<li>Templates - contact.html/<li>
+
+    Contact form
+    Sidebar
+
+<li>Templates - submission.html/<li>
+
+    Advanced form
+    Sidebar
+
+<li>Templates - sitemap.html/<li>
+
+    Structure of the site with links to every page.
+    Sidebar
+
+
+
