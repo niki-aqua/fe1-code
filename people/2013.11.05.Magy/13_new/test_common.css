@@ -1,0 +1,57 @@
+﻿*{ padding:0; margin:0px;}
+body{ font:12px/1.5 Verdana, Arial, sans-serif; }
+
+a{ text-decoration: none; color: #dd0c46;}
+p{ padding-bottom: 1.5em; color:#333333;}
+
+#container{ width:1200px; margin:0 auto; }
+.nobottom-border{ border-bottom:none ! important; }
+
+#header{ height: 130px; }
+#hedar-inner{ overflow:hidden; }
+
+#container-footer{clear: both; overflow:hidden; background: #2e2f33 url('./img/bottomPatternLight.png') 0 0 repeat;padding: 30px 0;}
+
+#footer{overflow: hidden; width:1200px; margin:0 auto; color:#fff; }
+#footer ul{ overflow:hidden; }
+#footer>ul>li{ float:left; display:block; width: 25%;}
+#footer ul li ul li { list-style:none; }
+#footer ul li ul li{-moz-border-radius: 5px;
+					-webkit-border-radius: 5px;
+					-khtml-border-radius: 5px;
+					border-radius: 5px;
+					background-color: #424347;
+}
+#container-footer-copyright{ background: #2e2f33 url('./img/bottomPatternDark.png') 0 0 repeat;padding: 20px 0; }
+#footer-copyright{ width:1200px;  margin:0 auto; }
+#footer-copyright,
+#footer-copyright a { color:#fff; }
+ 
+#header{ border-top: 10px solid #000;}
+#header h1{ padding: 50px 20px 25px 20px; font-size:2.5em; font-weight:none; border-bottom: 1px solid #e0e0e0; }
+#header h1 a{ color: #000;}
+#header h1 a span{ color:#acacac; }
+
+#header nav{ border-top: 4px solid #f4f4f4;}
+#header nav ul { overflow: hidden;}
+#header nav li { display: block; float:left;  list-style: none auto; }
+#header nav li a{ display: block; padding: 15px 20px; font-size: 1.16em; color: #999; }
+
+#menu-container nav{clear: both; background:url('./img/menuBG.png') 0 0 repeat-x; height:90px; padding-left:120px;  }
+
+#menu-container nav ul{ overflow:hidden;}
+#menu-container nav ul li{ float:left; display:block;  list-style:none auto; background: url('./img/menuSep.png') center right no-repeat; }
+#menu-container nav ul li a{ display:block; padding:30px 30px; font-size:1.48em; color:#999; text-decoration:none;  }
+#menu-container nav ul li :hover{ background:url('./img/menuBG_hover.jpg') 0 0 repeat-x ; }
+#menu-container nav ul li a:hover{color:#fff; }
+
+
+#main{ }
+#main-inner{ overflow:hidden; }
+
+#main .inner{ padding: 10px; }
+#main .content,
+#main .sidebar{ float:left; overflow:hidden; }
+
+#main .content { width: 70%; margin-left: 0.83%;} /* (840/1200)x100; (10/1200)x100*/
+#main .sidebar {width: 29.16%; } /*(350/1200)x100*/
